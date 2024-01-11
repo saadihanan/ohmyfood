@@ -40,7 +40,7 @@
 }
 
 .fonctionnement {
-  margin: 0 2.2%;
+  padding: 0 3.2%;
 }
 .fonctionnement ol {
   counter-reset: steps;
@@ -87,6 +87,26 @@
 }
 .fonctionnement li .fa-store {
   color: #9356DC;
+}
+
+.restaurant {
+  padding: 0 3.2%;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column;
+}
+.restaurant .card {
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.6vw;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+.restaurant .card-img {
+  height: 95%;
+  width: 100%;
+  object-fit: cover;
 }
 
 *, ::before, ::after {
