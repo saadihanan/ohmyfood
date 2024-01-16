@@ -102,9 +102,30 @@
   border-radius: 1.6vw;
   background-color: #FFFFFF;
   overflow: hidden;
+  position: relative;
+}
+.restaurant .card h3 {
+  position: absolute;
+  top: 1vh;
+  right: 3vw;
+  background-color: #99e2d1;
+  color: #408767;
+  padding: 9px 11px 9px 11px;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 3vw;
+}
+.restaurant .card .card-heart {
+  position: absolute;
+  left: 86vw;
+  bottom: 13vh;
+  font-size: 35px;
+}
+.restaurant .card .card-text {
+  font-size: 24px;
 }
 .restaurant .card-img {
-  height: 95%;
+  height: 305px;
   width: 100%;
   object-fit: cover;
 }
@@ -118,6 +139,11 @@ body {
   width: 100%;
   max-width: 767.98px;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

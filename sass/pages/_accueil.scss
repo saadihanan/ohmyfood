@@ -84,10 +84,29 @@ color: grey;}
     border-radius: 1.6vw;
     background-color: variables.$quaternary-color;
     overflow: hidden;
+    position: relative;
+    h3{position: absolute;
+        top: 1vh;
+    right: 3vw;
+background-color: #99e2d1;
+color: #408767;
+padding: 9px 11px 9px 11px;
+border-radius: 5px;
+font-weight: normal;
+font-size: 3vw;}
+.card-heart{position: absolute;
+left: 86vw;
+bottom: 13vh;
+font-size: 35px;
+}
+.card-text{
+font-size: 24px;
+}
   
 }  
 
-.card-img{height: 95%;
+.card-img{height: 305px;
     width: 100%;
 object-fit: cover;}
+
 } 
