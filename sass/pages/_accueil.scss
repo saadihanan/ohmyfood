@@ -71,22 +71,26 @@ color: grey;}
 
 
  .restaurant{
+   margin-top: 89px;
+   margin-bottom: 0;
     padding: 0 3.2%;
     background-color: variables.$background-color;
     display: flex;
     flex-direction: column;
+    h2{margin-top: 25px;}
     
    
 
-.card{ margin-bottom: 5vh;
+.card{ margin-top: 34px;
+    margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
-    border-radius: 1.6vw;
+    border-radius: 5.6vw;
     background-color: variables.$quaternary-color;
     overflow: hidden;
     position: relative;
     h3{position: absolute;
-        top: 1vh;
+        top: 5vh;
     right: 3vw;
 background-color: #99e2d1;
 color: #408767;
@@ -95,12 +99,16 @@ border-radius: 5px;
 font-weight: normal;
 font-size: 3vw;}
 .card-heart{position: absolute;
-left: 86vw;
-bottom: 13vh;
+left: 80vw;
+bottom: 5vh;
 font-size: 35px;
+line-height: 1;
 }
 .card-text{
-font-size: 24px;
+font-size: 20px;
+padding: 0px 26px 26px 26px;
+h2{margin-bottom: 9px;}
+
 }
   
 }  

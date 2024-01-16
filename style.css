@@ -11,6 +11,29 @@
   padding: 1% 0 0.1% 0;
 }
 
+.footer {
+  background-color: #353535;
+  margin: 0;
+  padding: 37px;
+}
+.footer h2 {
+  color: #ffffff;
+  font-family: "Shrikhand", serif;
+  font-size: 25px;
+  margin-bottom: 21px;
+}
+.footer ul {
+  color: #ffffff;
+}
+.footer ul .footer__list {
+  margin-bottom: 20px;
+  font-size: 20px;
+  list-style: none;
+}
+.footer ul .footer__link i {
+  margin-right: 19px;
+}
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -90,23 +113,29 @@
 }
 
 .restaurant {
+  margin-top: 89px;
+  margin-bottom: 0;
   padding: 0 3.2%;
   background-color: rgb(247, 247, 247);
   display: flex;
   flex-direction: column;
 }
+.restaurant h2 {
+  margin-top: 25px;
+}
 .restaurant .card {
+  margin-top: 34px;
   margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
-  border-radius: 1.6vw;
+  border-radius: 5.6vw;
   background-color: #FFFFFF;
   overflow: hidden;
   position: relative;
 }
 .restaurant .card h3 {
   position: absolute;
-  top: 1vh;
+  top: 5vh;
   right: 3vw;
   background-color: #99e2d1;
   color: #408767;
@@ -117,12 +146,17 @@
 }
 .restaurant .card .card-heart {
   position: absolute;
-  left: 86vw;
-  bottom: 13vh;
+  left: 80vw;
+  bottom: 5vh;
   font-size: 35px;
+  line-height: 1;
 }
 .restaurant .card .card-text {
-  font-size: 24px;
+  font-size: 20px;
+  padding: 0px 26px 26px 26px;
+}
+.restaurant .card .card-text h2 {
+  margin-bottom: 9px;
 }
 .restaurant .card-img {
   height: 305px;
@@ -131,6 +165,8 @@
 }
 
 *, ::before, ::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
