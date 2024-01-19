@@ -82,7 +82,7 @@ color: grey;
 .restaurant {
     margin-top: 56px;
     margin-bottom: 0;
-    padding: 0 3.2% 12% 0;
+    padding: 0 3.2% 12% 3.2%;
     background-color: variables.$background-color;
     display: flex;
     flex-direction: column;
@@ -114,22 +114,35 @@ color: grey;
             font-size: 3vw;
         }
 
+
+
         .fa-heart {
             position: absolute;
             left: 80vw;
             bottom: 5vh;
-            font-size: 35px;
+            font-size: 43px;
             line-height: 1;
-                color: black; 
-                transition: color 0.3s ease; 
-              
-              
-              
-             &:hover {
-                color: red; 
-              }
+            cursor: pointer; }
 
-        }
+            .heart-icon-container {
+                display: inline-block;
+            }
+            
+            #heart-icon-hover {
+                display: none;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                transition: all 200ms
+            }
+            
+            #heart-icon:hover + #heart-icon-hover {
+                display: inline-block;
+                background-image: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
+                transform: scale(1.2);
+            }
+
+   
 
         .card-text {
             font-size: 20px;
@@ -151,4 +164,9 @@ color: grey;
     object-fit: cover;
 }
 
-
+@media (min-width: 768px) {
+    body, .localisation, .explorer, .fonctionnement, .restaurant, .header, .footer {
+      width: 100%;
+      max-width: initial;
+    }
+  }
