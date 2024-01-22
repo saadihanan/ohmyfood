@@ -5,23 +5,81 @@
 border-radius: 94px;
 position: relative;
 bottom: 20vh;
-padding:9% 4.2% 2% 9%;
+padding:9% 5% 9% 5%;
+margin: 0;
 .page-title{font-family: 'Shrikhand', serif;
     font-size: 51px;
     font-weight: normal;
 }
 .choice-title{font-size: 28px;
     font-weight: normal;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 46px;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 62%;
+        height: 5px;
+        background-color: variables.$tertiary-color;
+    }
 }
 .card-menu {background-color: variables.$quaternary-color;
 border-radius: 20px;
-margin-bottom: 2%;
+margin-bottom: 4%;
 box-shadow: variables.$base-box-shadow;
-padding: 1%;}
-h2{font-size:13px ;
+padding: 2% 2% 1% 2%;
+position: relative;
+
+h4{font-size:33px ;
+    font-weight:400;
 margin-bottom: 10px;}
-P{font-size: 23px;
-margin-top: 10px;}
-.price{position: relative;
-left: 79vw;
-bottom: 3vh;}}
+P{font-size: 27px;
+    font-weight: 200;}
+
+.price{font-size: 20px;
+    font-weight: 600;
+    position: relative;
+left: 77vw;
+bottom: 4vh;}
+.icon-box {
+    width: 100px; /* Ajustez la largeur selon vos besoins */
+    height: 126px; /* Ajustez la hauteur selon vos besoins */
+    border: 2px solid variables.$tertiary-color; /* Couleur de la bordure de la boîte */
+    padding: 10px; /* Espace intérieur de la boîte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$tertiary-color;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    right: 0px;
+    top:1px ;
+}
+
+.fa-circle-check {
+    font-size: 35px;
+    color: white;
+    /* Autres styles pour l'icône au besoin */
+}
+// .fa-circle-check{font-size: 35px;
+// color: variables.$tertiary-color;
+// position: absolute;
+// right: -1px;
+// top: -1px;
+// border: 2px solid variables.$tertiary-color;
+// border-radius: 0 20px 20px 0;
+// padding: 6.4%;
+// border-color: grey;
+
+// }
+}
+.order-btn{
+    display: block;
+    margin: 91px auto;
+padding: 5% 13% 5% 13%;
+}
+}
