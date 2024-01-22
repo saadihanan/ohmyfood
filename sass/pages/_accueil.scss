@@ -123,24 +123,27 @@ color: grey;
             font-size: 43px;
             line-height: 1;
             cursor: pointer; }
-
             .heart-icon-container {
                 display: inline-block;
-            }
-            
-            #heart-icon-hover {
-                display: none;
-                color: transparent;
-                background-clip: text;
-                -webkit-background-clip: text;
-                transition: all 200ms
-            }
-            
-            #heart-icon:hover + #heart-icon-hover {
-                display: inline-block;
-                background-image: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
-                transform: scale(1.2);
-            }
+              
+                .heart-icon-hover {
+                  display: none;
+                  color: transparent;
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  transition: all 200ms;
+                }
+              
+                .heart-icon:hover + .heart-icon-hover {
+                  display: inline-block;
+                  background-image: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
+                  transform: scale(1.2);
+                }
+              }
+              
+              
+
+
 
    
 

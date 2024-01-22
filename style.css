@@ -10,6 +10,12 @@
   justify-content: center;
   padding: 3% 0 0.9% 0;
 }
+.header .fa-arrow-left {
+  position: relative;
+  right: 42vw;
+  bottom: 4vh;
+  font-size: 29px;
+}
 
 .footer {
   background-color: #353535;
@@ -164,14 +170,14 @@
 .restaurant .card .heart-icon-container {
   display: inline-block;
 }
-.restaurant .card #heart-icon-hover {
+.restaurant .card .heart-icon-container .heart-icon-hover {
   display: none;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 200ms;
 }
-.restaurant .card #heart-icon:hover + #heart-icon-hover {
+.restaurant .card .heart-icon-container .heart-icon:hover + .heart-icon-hover {
   display: inline-block;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   transform: scale(1.2);
@@ -209,9 +215,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  object-fit: cover;
 }
 
 .btn {
@@ -239,11 +253,11 @@ a {
   inset: 0;
   z-index: 1;
   opacity: 0.8;
-  animation: desappear 1s 2s both, hideLoader 3s forwards; /* Ajout d'une nouvelle animation hideLoader */
+  animation: desappear 1s 2s both, hideLoader 3s forwards;
 }
 
 .fa-circle-notch {
-  color: #FF79DA;
+  color: #9356DC;
 }
 
 @keyframes desappear {
@@ -255,6 +269,46 @@ a {
   to {
     display: none;
   }
+}
+.page-img {
+  max-width: 100%;
+}
+
+.cards_containr {
+  background-color: rgb(247, 247, 247);
+  border-radius: 94px;
+  position: relative;
+  bottom: 20vh;
+  padding: 9% 4.2% 2% 9%;
+}
+.cards_containr .page-title {
+  font-family: "Shrikhand", serif;
+  font-size: 51px;
+  font-weight: normal;
+}
+.cards_containr .choice-title {
+  font-size: 28px;
+  font-weight: normal;
+}
+.cards_containr .card-menu {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  box-shadow: 0 8px 8px 0 #d9d9d9;
+  padding: 1%;
+}
+.cards_containr h2 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.cards_containr P {
+  font-size: 23px;
+  margin-top: 10px;
+}
+.cards_containr .price {
+  position: relative;
+  left: 79vw;
+  bottom: 3vh;
 }
 
 /*# sourceMappingURL=style.css.map */

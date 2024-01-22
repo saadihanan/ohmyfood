@@ -1,0 +1,27 @@
+@use '../../sass/utilités/variables';
+
+.page-img{max-width: 100%;}
+.cards_containr{background-color: variables.$background-color;
+border-radius: 94px;
+position: relative;
+bottom: 20vh;
+padding:9% 4.2% 2% 9%;
+.page-title{font-family: 'Shrikhand', serif;
+    font-size: 51px;
+    font-weight: normal;
+}
+.choice-title{font-size: 28px;
+    font-weight: normal;
+}
+.card-menu {background-color: variables.$quaternary-color;
+border-radius: 20px;
+margin-bottom: 2%;
+box-shadow: variables.$base-box-shadow;
+padding: 1%;}
+h2{font-size:13px ;
+margin-bottom: 10px;}
+P{font-size: 23px;
+margin-top: 10px;}
+.price{position: relative;
+left: 79vw;
+bottom: 3vh;}}
