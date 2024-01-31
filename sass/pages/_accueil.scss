@@ -28,7 +28,7 @@ p{margin-bottom: 7%;}}
    
     padding: 3.2%;
     h2{margin:9% 0 6% 0;
-    font-size: 5vw;}
+    font-size: 25px;}
     ol{ 
         
         counter-reset: steps;
@@ -89,7 +89,8 @@ color: grey;
 
     .restau-title {
         margin-top: 66px;
-        font-size: 5vw;
+        font-size:30px;
+        font-weight: bold;
     }
 
     .card {
@@ -104,14 +105,17 @@ color: grey;
 
         .new {
             position: absolute;
-            top: 5vh;
-            right: 3vw;
+            top: 4vh;
+            right: 4vw;
             background-color: #99e2d1;
             color: #408767;
             padding: 9px 11px 9px 11px;
             border-radius: 5px;
-            font-weight: normal;
-            font-size: 3vw;
+            text-align: center;
+            font-weight: 500;
+            width: 22%;
+            font-size: 23px;
+            
         }
 
 
