@@ -46,7 +46,7 @@ p{margin-bottom: 7%;}}
     width: 100%;
     height: 8.3vw;
 border-radius: 1.6vw;
-font-weight: 500;
+
 
 display: flex;
 align-items: center;
@@ -68,8 +68,7 @@ right: 1.5%;
 padding: 2.4%;}
 
 
-p{ font-size: 4.6vw;
-font-weight: 500;}
+
 i{font-size: 3.6vw;
     padding: 0 7.6% 0 1.6%;
 color: grey;
@@ -79,101 +78,155 @@ color: grey;
 }
 }}
 
-.restaurant {
-    margin-top: 56px;
-    margin-bottom: 0;
-    padding: 0 3.2% 12% 3.2%;
-    background-color: variables.$background-color;
-    display: flex;
-    flex-direction: column;
+.Restaurants {
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
 
-    .restau-title {
-        margin-top: 66px;
-        font-size:30px;
-        font-weight: bold;
+  @media (min-width:64rem) {
+    padding: 2rem 10rem;
+  }
+
+  &_title {
+    margin-top: 0;
+  }
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  @media (min-width:64rem) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  display: block;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+  transition: .2s;
+
+  &_link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &_img {
+    height: 12rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+  }
+
+  &_badge {
+    background-color: variables.$tertiary-color;
+    color: darken(variables.$tertiary-color, 50%);
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+  }
+
+  &_footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &_content {
+    flex: 1;
+  }
+
+  &_name {
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  &_city {
+    margin: 0;
+  }
+
+  &_btn {
+    height: 2rem;
+    width: 2rem;
+    border: transparent 0px solid;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1.9rem;
+    right: 2.3rem;
+
+    &--Liked {
+
+      position: relative;
+      background: linear-gradient(0deg, variables.$primary-color 0%, variables.$secondary-color 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: opacity 500ms ease-in-out;
+      opacity: 0;
+
     }
 
-    .card {
-        margin-top: 34px;
-        margin-bottom: 5vh;
-        display: flex;
-        flex-direction: column;
-        border-radius: 5.6vw;
-        background-color: variables.$quaternary-color;
-        overflow: hidden;
-        position: relative;
+    &--Unliked {
 
-        .new {
-            position: absolute;
-            top: 4vh;
-            right: 4vw;
-            background-color: #99e2d1;
-            color: #408767;
-            padding: 9px 11px 9px 11px;
-            border-radius: 5px;
-            text-align: center;
-            font-weight: 500;
-            width: 22%;
-            font-size: 23px;
-            
-        }
+      position: absolute;
 
+    }
 
+    & input[type="checkbox"] {
 
-        .fa-heart {
-            position: absolute;
-            left: 80vw;
-            bottom: 5vh;
-            font-size: 43px;
-            line-height: 1;
-            cursor: pointer; }
-            .heart-icon-container {
-                display: inline-block;
-              
-                .heart-icon-hover {
-                  display: none;
-                  color: transparent;
-                  background-clip: text;
-                  -webkit-background-clip: text;
-                  transition: all 200ms;
-                }
-              
-                .heart-icon:hover + .heart-icon-hover {
-                  display: inline-block;
-                  background-image: linear-gradient(to bottom, variables.$secondary-color, variables.$primary-color);
-                  transform: scale(1.2);
-                }
-              }
-              
-              
+      display: none;
+
+    }
+
+    &:hover &--Liked {
+
+      opacity: 1;
+
+    }
+
+    & input[type="checkbox"]:checked~&--Liked {
+
+      display: inline-block;
+      opacity: 1;
+    }
+
+    & input[type="checkbox"]:checked~&--Unliked {
+
+      display: none;
+    }
+  }
+
+  &_heart {
+
+    font-size: 1.5rem;
+  }
+
+}
+    
+    
 
 
 
-   
-
-        .card-text {
-            font-size: 20px;
-            padding: 26px 26px 26px 26px;
-            h3 {
-                margin-bottom: 9px;
-            }
-        }
+        
 
         
 
        
-    }
-}
+    
 
-.card-img {
-    height: 305px;
-    width: 100%;
-    object-fit: cover;
-}
 
-@media (min-width: 768px) {
-    body, .localisation, .explorer, .fonctionnement, .restaurant, .header, .footer {
-      width: 100%;
-      max-width: initial;
-    }
-  }

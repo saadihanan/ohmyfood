@@ -11,88 +11,156 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <header class="header ">
-      <h1>ohmyfood</h1>
-      <a href="file:///C:/Users/saadi/OneDrive/Bureau/oh-my-food/Menus/le-delice-des-sens.html"
-          ><i class="fa-solid fa-arrow-left"></i
-        ></a>
+    
+    <header>
+      <nav class="header header--formenupages">
+        <a href="../index.html">
+          <i class="fas fa-arrow-left header_previous"></i>
+        </a>
+        <h1 class="header_logo">ohmyfood</h1>
+      </nav>
+      <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="RestaurantImg"
+        alt="plat du menu du restaurant le délice des sens">
     </header>
-    <main>
-      <section>
-        <img
-          src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-          alt="photo-le-delice-des-sens"
-        />
-      </section>
-      <div class="cards_containr">
-        <h1>Le délice des sens</h1>
-        <div><i class="fa-regular fa-heart"></i></div>
-        <section class="ENTREES2">
-          <h3>ENTREES</h3>
-          <div>
-            <a href="#" class="card_entree">
-              <h2>Tartare de thon</h2>
-              <p>Assaisonné au yuzu</p>
-              <span>25€</span>
-            </a>
-            <a href="#" class="card_entree">
-              <h2>Bouchée de homard croustillant</h2>
-              <p>Et sa farandole de petits légumes</p>
-              <span>35€</span>
-            </a>
-            <a href="#" class="card_entree">
-              <h2>Velouté de cèpes</h2>
-              <p>Aux truffes</p>
-              <span>20€</span>
-            </a>
-          </div>
+    <main class="menu">
+      <!-- Le nom du restaurant -->
+      <header class="menu_header">
+        <h2 class="menu_title">Le délice des sens</h2>
+        <label class="card_btn menu_btn">
+          <input type="checkbox" name="restaurant-liked" value="x" id="restaurant1" />
+          <i class=" card_heart card_btn--Unliked fa-regular fa-heart"></i>
+          <i class=" card_heart card_btn--Liked fa-solid fa-heart"></i>
+        </label>
+      </header>
+      <!-- l'entrée du restaurants Le délice des sens -->
+      <div class="RestoMenus">
+        <section class="RestoMenu">
+          <h3 class="RestoMenu_title">Entrées</h3>
+          <section class="menuItem delay-0">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Tartare de thon</h4>
+              <p class="menuItem_description">Assaisonné au yuzu</p>
+            </header>
+            <div class="menuItem_price">25€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+          <section class="menuItem delay-1">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Bouchée de homard croustillant </h4>
+              <p class="menuItem_description">Et sa farandole de petits légumes</p>
+            </header>
+            <div class="menuItem_price">35€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+          <section class="menuItem delay-2">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Poulet rôti aux herbes de Provence </h4>
+              <p class="menuItem_description">Et sa crème de truffe</p>
+            </header>
+            <div class="menuItem_price">40€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
         </section>
-        <section class="plats2">
-          <h3>Plats</h3>
-          <div>
-            <a href="#" class="card_plats2">
-              <h2>Poulet rôti aux herbes de Provence</h2>
-              <p>Et sa crème de truffe</p>
-              <span>40€</span>
-            </a>
-            <a href="#" class="card_plats2">
-              <h2>Langouste rôtie</h2>
-              <p>Et ses légumes de saison</p>
-              <span>35€</span>
-            </a>
-            <a href="#" class="card_plats2">
-              <h2>Côte de bœuf Angus</h2>
-              <p>Et sa purée de panais</p>
-              <span>44€</span>
-            </a>
-          </div>
+        <!-- Plats du restaurants Le délice des sens -->
+        <section class="RestoMenu">
+          <h3 class="RestoMenu_title">Plats</h3>
+          <section class="menuItem delay-3">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Poulet rôti aux herbes de Provence </h4>
+              <p class="menuItem_description">Et sa crème de truffe</p>
+            </header>
+            <div class="menuItem_price">40€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+          <section class="menuItem delay-4">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Langouste rôtie </h4>
+              <p class="menuItem_description">Et ses légumes de saison</p>
+            </header>
+            <div class="menuItem_price">35€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+          <section class="menuItem delay-5">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Côte de bœuf Angus </h4>
+              <p class="menuItem_description">Et sa purée de panais</p>
+            </header>
+            <div class="menuItem_price">44€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
         </section>
-        <section class="Desserts2">
-          <h3>Desserts</h3>
-          <div>
-            <a href="#" class="card_Desserts2">
-              <h2>Farandole de desserts</h2>
-              <p>Du chef</p>
-              <span>18€</span>
-            </a>
-
-            <a href="#" class="card_Desserts2">
-              <h2>Crème brulée</h2>
-              <p>Revisitée</p>
-              <span>22€</span>
-            </a>
-            <a href="#" class="card_Desserts2">
-              <h2>Tiramisu</h2>
-              <p>À la noisette</p>
-              <span>23€ </span>
-            </a>
-          </div>
+        <!-- Dessert du restaurants Le délice des sens -->
+        <section class="RestoMenu">
+          <h3 class="RestoMenu_title">Desserts</h3>
+          <section class="menuItem delay-6">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Farandole de desserts</h4>
+              <p class="menuItem_description">Du chef</p>
+            </header>
+            <div class="menuItem_price">18€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+  
+          <section class="menuItem delay-7">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Crème brulée </h4>
+              <p class="menuItem_description">Revisitée</p>
+            </header>
+            <div class="menuItem_price">22€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
+  
+          <section class="menuItem delay-8">
+            <header class="menuItem_header">
+              <h4 class="menuItem_title">Tiramisu </h4>
+              <p class="menuItem_description">À la noisette</p>
+            </header>
+            <div class="menuItem_price">23€</div>
+            <div class="menuItem_confirmation">
+              <div class="menuItem_wrapIcon">
+                <i class="menuItem_icon fas fa-check"></i>
+              </div>
+            </div>
+          </section>
         </section>
-        <div class="button">
-          <button class="btn">Commander</button>
-        </div>
+      </div>
+      <div class="wrapBtn">
+        <button class="commandBtn">Commander</button>
       </div>
     </main>
+   
     <footer class="footer">
       <h2>ohmyfood</h2>
       <ul>
