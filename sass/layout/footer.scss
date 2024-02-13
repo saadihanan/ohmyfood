@@ -1,16 +1,26 @@
 .footer{background-color:#353535 ;
     margin: 0;
-    padding: 37px;
+    padding: 1rem;
+    @media(min-width:1024px){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        gap: 4rem;
+        padding: 3rem 3rem 1rem ;
+    }
 h2{color:#ffffff;
     font-family: 'Shrikhand', serif;
-font-size: 25px;
-margin-bottom: 21px;
+    font-size: 1.2rem;
+    margin-bottom: 21px;
 }
 ul{
 color: #ffffff;
+@media(min-width: 1024px){
+    display: flex;
+flex-direction: row;
+gap: 14px;}
 .footer__list{
 margin-bottom: 20px;
-font-size: 20px; 
 list-style: none;}
 .footer__link{
     i{margin-right: 19px;}

@@ -26,42 +26,45 @@
     </header>
     <main>
       <!--localisation-->
-      <section class="localisation">
-        <i class="fas fa-map-marker-alt localisation__icon"></i>
-        <h2 class="localisation__text">Paris, Belleville</h2>
-      </section>
-      <!--explorer-->
-      <section class="explorer">
-        <h2>
-          Réservez le menu qui <br />
-          convient
-        </h2>
-        <p>
-          Découvrez des restaurants d'exception, <br />
-          sélectionnés par nos soins.
-        </p>
-        <a href="#Restaurants" class=" btn-home btn">
-          Explorer nos restaurants
-      </a>
-      </section>
+      <form method="get" class="location_research">
+        <label for="recherche"> <i class="fa-solid fa-location-dot"></i></label>
+        <input type="text" class="location_research_value" name="q" id="recherche" value="Paris, Belleville">
+    </form>
+      <!--introduction-->
+
+      <section class="introduction">
+        <h1 class="introduction_title">Réservez le menu qui vous convient</h1>
+        <p class="introduction_subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <a href="#Restaurants" class="btn-home btn">
+            Explorer nos restaurants
+        </a>
+    </section>
       <!--fonctionnemnt-->
-      <section class="fonctionnement">
-        <h2>Fonctionnement</h2>
-        <ol>
-          <li>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <p>Choisissez un restaurant</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-list"></i>
-            <p>Composez votre menu</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-store"></i>
-            <p>Dégustez au restaurant</p>
-          </li>
-        </ol>
-      </section>
+      <section class="Function">
+        <div class="Fonctionnement">
+            <h2 class="Function_title">Fonctionnement</h2>
+            <ol class="Function_steps">
+                <li class="Function_step">
+                    
+                        <i class=" fa-solid fa-mobile-screen-button"></i>
+                        <span class="Function_text">Choisissez un restaurant</span>
+                </li>
+                <li class="Function_step">
+                    
+                        <i class="fa-solid fa-list-ul"></i>
+                        <span class="Function_text">Composez votre menu</span>
+                    
+                </li>
+                <li class="Function_step">
+                    
+                        <i class=" fa-solid fa-store"></i>
+                        <span class="Function_text">Dégustez au restaurant </span>
+                  
+                </li>
+            </ol>
+        </div>
+    </section>
+      
       <!--choix restaurants-->
       <section class="Restaurants" id="Restaurants">
         <h2 class="Restaurants_title">Restaurants</h2>

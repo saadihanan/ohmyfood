@@ -30,105 +30,149 @@
 .footer {
   background-color: #353535;
   margin: 0;
-  padding: 37px;
+  padding: 1rem;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    gap: 4rem;
+    padding: 3rem 3rem 1rem;
+  }
 }
 .footer h2 {
   color: #ffffff;
   font-family: "Shrikhand", serif;
-  font-size: 25px;
+  font-size: 1.2rem;
   margin-bottom: 21px;
 }
 .footer ul {
   color: #ffffff;
 }
+@media (min-width: 1024px) {
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+}
 .footer ul .footer__list {
   margin-bottom: 20px;
-  font-size: 20px;
   list-style: none;
 }
 .footer ul .footer__link i {
   margin-right: 19px;
 }
 
-.localisation {
+/* champ de recherche */
+.location_research {
   display: flex;
+  gap: 15px;
   justify-content: center;
-  align-items: center;
-  gap: 2%;
-  color: rgb(59, 58, 58);
-  background-color: rgba(231, 229, 229, 0.9764705882);
-  padding: 3%;
+  background: var(--Grey-2, #EAEAEA);
+  color: var(--Grey, #353535);
+  padding: 15px 0px 15px 115px;
 }
-.localisation h2 {
-  font-weight: 500;
-  font-size: 2.3vw;
-}
-.localisation i {
-  font-size: 2vw;
+.location_research_value {
+  background: var(--Grey-2, #EAEAEA);
+  border: 1px solid var(--Grey-2, #EAEAEA);
+  font-size: 17px;
+  font-weight: bolder;
 }
 
-.explorer {
+.introduction {
+  padding: 2rem;
   text-align: center;
   background-color: rgb(247, 247, 247);
-  font-size: 4.3vw;
-  font-weight: normal;
-  padding: 8% 0 12% 0;
 }
-.explorer h2 {
-  margin-bottom: 3%;
+.introduction_title {
+  margin-bottom: 16px;
+  font-weight: 500;
 }
-.explorer p {
-  margin-bottom: 7%;
+@media (min-width: 1024px) {
+  .introduction_title {
+    font-size: 40px;
+  }
+}
+.introduction_subtitle {
+  margin-bottom: 16px;
+  color: var(--Grey, #353535);
+}
+@media (min-width: 1024px) {
+  .introduction_subtitle {
+    font-size: 18px;
+  }
 }
 
-.fonctionnement {
-  padding: 3.2%;
+.Function {
+  padding: 2rem 1rem;
 }
-.fonctionnement h2 {
-  margin: 9% 0 6% 0;
-  font-size: 25px;
+@media (min-width: 1024px) {
+  .Function {
+    padding: 3rem 10rem;
+  }
 }
-.fonctionnement ol {
-  counter-reset: steps;
-  display: flex;
-  flex-direction: column;
+.Function_title {
+  margin-bottom: 22px;
+}
+.Function_steps {
+  margin: 0;
   padding: 0;
-}
-.fonctionnement li {
-  margin-bottom: 5.6%;
-  padding: 36px 0;
   list-style: none;
-  background-color: rgb(247, 247, 247);
-  box-shadow: 0 8px 8px 0 #d9d9d9;
-  width: 100%;
-  height: 8.3vw;
-  border-radius: 1.6vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  counter-reset: liste;
 }
-.fonctionnement li::before {
-  content: counter(steps);
-  counter-increment: steps;
-  color: rgb(247, 247, 247);
-  background-color: #9356DC;
+@media (min-width: 1024px) {
+  .Function_steps {
+    display: flex;
+  }
+}
+.Function_step {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2%;
-  height: 2%;
-  border-radius: 50%;
   position: relative;
-  right: 1.5%;
-  padding: 2.4%;
+  white-space: nowrap;
 }
-.fonctionnement li i {
-  font-size: 3.6vw;
-  padding: 0 7.6% 0 1.6%;
-  color: grey;
+.Function_step i {
+  margin-right: 1rem;
+  color: #7e7e7e;
 }
-.fonctionnement li i:hover {
+.Function_step i:hover {
   color: #9356DC;
+}
+@media (min-width: 1024px) {
+  .Function_step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .Function_step:first-child {
+    margin-left: 0.75rem;
+  }
+}
+.Function_step::before {
+  counter-increment: liste 1;
+  content: counter(liste) " ";
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -0.75rem;
+}
+@media (min-width: 1024px) {
+  .Function_text {
+    font-size: 13px;
+    font-weight: 900;
+  }
 }
 
 .Restaurants {
@@ -253,7 +297,6 @@
 body {
   margin: 0;
   width: 100%;
-  max-width: 767.98px;
   font-family: "Roboto", sans-serif;
 }
 

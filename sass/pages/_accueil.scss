@@ -1,82 +1,128 @@
 @use '../../sass/utilités/variables';
-.localisation{
-    display: flex;
-justify-content: center;
-align-items: center;
-gap:2%;
-color:rgb(59, 58, 58);
-background-color: #e7e5e5f9;
-padding: 3%;
-h2 {font-weight:500; 
-    font-size: 2.3vw;
+/* champ de recherche */
+
+.location_research {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  background: var(--Grey-2, #EAEAEA);
+  color: var(--Grey, #353535);
+  padding: 15px 0px 15px 115px;
+
+  &_value {
+    background: var(--Grey-2, #EAEAEA);
+    border: 1px solid var(--Grey-2, #EAEAEA);
+    font-size: 17px;
+    font-weight: bolder;
+  }
+}
+.introduction {
+  padding: 2rem;
+  text-align: center;
+  background-color:variables.$background-color;
+
+  &_title {
+    margin-bottom: 16px;
+    font-weight: 500;
+
+    @media (min-width:1024px) {
+      font-size: 40px;
     }
-i{font-size: 2vw;}
+  }
 
+  &_subtitle {
+    margin-bottom: 16px;
+    color: var(--Grey, #353535);
+
+    @media (min-width:1024px) {
+      font-size: 18px;
+    }
+  }
+
+  
 }
-.explorer {text-align: center;
-    background-color: variables.$background-color;
-   
-font-size: 4.3vw;
-font-weight: normal;
 
-padding:8% 0 12% 0 ;
-h2{margin-bottom: 3%;}
-p{margin-bottom: 7%;}}
+.Function {
+  padding: 2rem 1rem;
 
+  @media (min-width:1024px) {
+    padding: 3rem 10rem;
 
-.fonctionnement{ 
-   
-    padding: 3.2%;
-    h2{margin:9% 0 6% 0;
-    font-size: 25px;}
-    ol{ 
-        
-        counter-reset: steps;
-   
-    display: flex;
-    flex-direction: column;
-    
-    padding: 0;}
-    li{ margin-bottom: 5.6%;
-  padding:36px 0;
+  }
+
+  &_title {
+    margin-bottom: 22px;
+  }
+
+  &_steps {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    background-color: variables.$background-color; 
-    box-shadow: variables.$base-box-shadow; 
-   
-    width: 100%;
-    height: 8.3vw;
-border-radius: 1.6vw;
+    counter-reset: liste;
+
+    @media (min-width:1024px) {
+      display: flex;
+    }
+  }
+
+  &_step {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    i {
+      margin-right: 1rem;
+      color: #7e7e7e;
+      &:hover{
+        color:variables.$primary-color;
+      }
+     
+    }
+  
+
+    @media (min-width:1024px) {
+      flex: 1;
+      margin: 0;
+      margin-left: 2rem;
+
+      &:first-child {
+        margin-left: 0.75rem;
+      }
+    }
+
+    &::before {
+      counter-increment: liste 1;
+      content: counter(liste) " ";
+      background: variables.$primary-color;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: absolute;
+      left: -0.75rem;
+    }
+  }
+
+ 
 
 
-display: flex;
-align-items: center;
-justify-content:flex-start;
-
-
-&::before{content: counter(steps); 
-counter-increment: steps;
- color:variables.$background-color ;
-background-color: variables.$primary-color; 
-display: flex;
-align-items:center;
-justify-content: center;
-width: 2%;
-height: 2%;
-border-radius: 50%;
-position: relative;
-right: 1.5%;
-padding: 2.4%;}
-
-
-
-i{font-size: 3.6vw;
-    padding: 0 7.6% 0 1.6%;
-color: grey;
-&:hover{
-    color:variables.$primary-color;
+  &_text {
+    @media (min-width :1024px) {
+      font-size: 13px;
+      font-weight: 900;
+     
+    }
+  }
 }
-}
-}}
+
+
 
 .Restaurants {
   background-color: #f6f6f6;
