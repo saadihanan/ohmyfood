@@ -128,11 +128,12 @@
   background-color: #f6f6f6;
   padding: 2rem 1rem;
 
-  @media (min-width:64rem) {
+  @media (min-width:1024px) {
     padding: 2rem 10rem;
   }
 
   &_title {
+  
     margin-bottom: 17px;
   }
 }
