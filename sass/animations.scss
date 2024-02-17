@@ -9,6 +9,15 @@
     }
   }
 
+//  animation de loader 
+  
+  @keyframes loader {
+   100% {
+     opacity: 0;
+     visibility: hidden;
+   }
+  }
+  
   @keyframes jump {
     0% {
      transform: translateY(0);
@@ -21,12 +30,5 @@
    }
    100% {
      transform: translateY(0);
-   }
-  }
-  
-  @keyframes loader {
-   100% {
-     opacity: 0;
-     visibility: hidden;
    }
   }

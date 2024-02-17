@@ -147,8 +147,8 @@
 @media (min-width: 1024px) {
   .Function_step {
     flex: 1;
-    margin: 0;
     margin-left: 2rem;
+    margin-right: 2rem;
   }
   .Function_step:first-child {
     margin-left: 0.75rem;
@@ -298,10 +298,6 @@ body {
   margin: 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
-}
-
-main {
-  margin: 0;
 }
 
 a {
@@ -569,6 +565,12 @@ img {
     opacity: 1;
   }
 }
+@keyframes loader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes jump {
   0% {
     transform: translateY(0);
@@ -581,12 +583,6 @@ img {
   }
   100% {
     transform: translateY(0);
-  }
-}
-@keyframes loader {
-  100% {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 

@@ -84,10 +84,11 @@
     }
   
 
-    @media (min-width:1024px) {
+    @media (min-width:1024px ) {
       flex: 1;
-      margin: 0;
+      
       margin-left: 2rem;
+      margin-right: 2rem;
 
       &:first-child {
         margin-left: 0.75rem;
